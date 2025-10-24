@@ -6,7 +6,9 @@ const navLinks = [
   { name: 'Beranda', path: '/' },
   { name: 'Tentang', path: '/tentang' },
   { name: 'Cara Kerja', path: '/cara-kerja' },
+  { name: 'Area Layanan', path: '/area-layanan' },
   { name: 'Harga', path: '/harga' },
+  { name: 'Mitra', path: '/mitra' },
   { name: 'Blog', path: '/blog' },
   { name: 'Kontak', path: '/kontak' },
 ];
@@ -18,7 +20,7 @@ const Header: React.FC = () => {
   const inactiveLinkClass = 'text-gray-300 hover:text-white transition-colors';
 
   return (
-    <header className="bg-[#1A4738]/90 backdrop-blur-sm sticky top-0 z-50">
+    <header className="bg-[#033C35]/90 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-white">
           JelantahGO
@@ -34,11 +36,6 @@ const Header: React.FC = () => {
             </NavLink>
           ))}
         </nav>
-        <div className="hidden md:block">
-          <button className="bg-white text-[#1A4738] font-semibold py-2 px-4 rounded-full hover:bg-gray-200 transition-colors">
-            Hubungi Kami
-          </button>
-        </div>
         <div className="md:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +45,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-[#1A4738] pb-4">
+        <div className="md:hidden bg-[#033C35] pb-4">
           <nav className="flex flex-col items-center space-y-4">
             {navLinks.map((link) => (
               <NavLink
@@ -60,9 +57,6 @@ const Header: React.FC = () => {
                 {link.name}
               </NavLink>
             ))}
-            <button className="bg-white text-[#1A4738] font-semibold py-2 px-6 rounded-full hover:bg-gray-200 transition-colors mt-4">
-              Hubungi Kami
-            </button>
           </nav>
         </div>
       )}

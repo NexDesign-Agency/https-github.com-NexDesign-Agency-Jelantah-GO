@@ -1,14 +1,13 @@
-
 import React from 'react';
 
 const ContactInfoCard: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
     <div className="bg-white p-6 rounded-lg shadow-sm text-center">
         <div className="flex justify-center mb-4">
-            <div className="bg-green-100 text-green-700 rounded-full w-16 h-16 flex items-center justify-center">
+            <div className="bg-green-50 text-[#033C35] rounded-full w-16 h-16 flex items-center justify-center">
                 {icon}
             </div>
         </div>
-        <h3 className="text-xl font-semibold text-[#1A4738] mb-2">{title}</h3>
+        <h3 className="text-xl font-semibold text-[#033C35] mb-2">{title}</h3>
         <div className="text-gray-600">{children}</div>
     </div>
 );
@@ -18,7 +17,7 @@ const ContactPage: React.FC = () => {
     <div className="py-20 bg-[#F9F8F4]">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-[#1A4738] mb-4">Hubungi Kami</h1>
+          <h1 className="text-4xl font-bold text-[#033C35] mb-4">Hubungi Kami</h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Kami siap membantu Anda. Jangan ragu untuk menghubungi kami melalui informasi di bawah ini atau kirimkan pesan kepada kami.
           </p>
@@ -31,7 +30,7 @@ const ContactPage: React.FC = () => {
             }
             title="WhatsApp"
           >
-            <a href="#" className="hover:text-green-600">0851-8303-3995</a>
+            <a href="#" className="text-[#033C35] hover:underline">0851-8303-3995</a>
             <p className="text-sm">Senin - Sabtu, 08:00 - 17:00</p>
           </ContactInfoCard>
           <ContactInfoCard
@@ -40,7 +39,7 @@ const ContactPage: React.FC = () => {
             }
             title="Email"
           >
-            <a href="mailto:info.jelantahgo@gmail.com" className="hover:text-green-600">info.jelantahgo@gmail.com</a>
+            <a href="mailto:info.jelantahgo@gmail.com" className="text-[#033C35] hover:underline">info.jelantahgo@gmail.com</a>
             <p className="text-sm">Respon dalam 24 jam kerja</p>
           </ContactInfoCard>
           <ContactInfoCard
@@ -55,28 +54,28 @@ const ContactPage: React.FC = () => {
         </div>
 
         <div className="max-w-4xl mx-auto bg-white p-8 sm:p-12 rounded-2xl shadow-lg">
-          <h2 className="text-3xl font-bold text-[#1A4738] mb-8 text-center">Kirim Pesan</h2>
+          <h2 className="text-3xl font-bold text-[#033C35] mb-8 text-center">Kirim Pesan</h2>
           <form className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">Nama Lengkap</label>
-                <input type="text" id="name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Nama Anda" />
+                <input type="text" id="name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#033C35]" placeholder="Nama Anda" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Alamat Email</label>
-                <input type="email" id="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="email@anda.com" />
+                <input type="email" id="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#033C35]" placeholder="email@anda.com" />
               </div>
             </div>
             <div>
               <label htmlFor="subject" className="block text-gray-700 font-semibold mb-2">Subjek</label>
-              <input type="text" id="subject" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Subjek pesan Anda" />
+              <input type="text" id="subject" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#033C35]" placeholder="Subjek pesan Anda" />
             </div>
             <div>
               <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">Pesan</label>
-              <textarea id="message" rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+              <textarea id="message" rows={5} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#033C35]" placeholder="Tuliskan pesan Anda di sini..."></textarea>
             </div>
             <div className="text-center">
-              <button type="submit" className="bg-[#1A4738] text-white font-bold py-3 px-10 rounded-full text-lg hover:bg-green-800 transition-colors">
+              <button type="submit" className="bg-[#033C35] text-white font-bold py-3 px-10 rounded-2xl text-lg hover:bg-[#1a4738] transition-colors">
                 Kirim Pesan
               </button>
             </div>

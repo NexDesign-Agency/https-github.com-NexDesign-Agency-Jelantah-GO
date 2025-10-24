@@ -7,9 +7,11 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import PricingPage from './pages/PricingPage';
+import MitraPage from './pages/MitraPage';
 import BlogListPage from './pages/BlogListPage';
 import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
+import ServiceAreaPage from './pages/ServiceAreaPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -42,7 +44,9 @@ const App: React.FC = () => {
           <Route index element={<HomePage />} />
           <Route path="tentang" element={<AboutPage />} />
           <Route path="cara-kerja" element={<HowItWorksPage />} />
+          <Route path="area-layanan" element={<ServiceAreaPage />} />
           <Route path="harga" element={<PricingPage />} />
+          <Route path="mitra" element={<MitraPage />} />
           <Route path="blog" element={<BlogListPage />} />
           <Route path="blog/:postId" element={<BlogPostPage />} />
           <Route path="kontak" element={<ContactPage />} />
