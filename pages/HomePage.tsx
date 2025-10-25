@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
       <section className="bg-[#033C35] text-white bg-[url('https://www.transparenttextures.com/patterns/subtle-carbon.png')]">
         <div className="container mx-auto px-6 py-24 md:py-32 flex flex-col items-center">
           <div className="w-full text-center">
-            <p className="font-semibold tracking-widest">JELANTANGO • JAKARTA & SEKITARNYA</p>
+            <p className="font-semibold tracking-widest">JelantahGO • Jakarta & Sekitarnya</p>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-4 mb-6">
               Jual Minyak Jelantah Jakarta | Harga Tinggi, Jemput Gratis & Dibayar Tunai
             </h1>
